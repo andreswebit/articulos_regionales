@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Puedes personalizar los colores base aquí */
+  --background-color: #f8f8f8;
+  --primary-color: #006FEE;
+  --text-color: #333333;
+}
+
+body {
+  background-color: #f5f5f7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' preserveAspectRatio='none'%3E%3Cpath fill='%23e0e0e5' fill-opacity='0.4' d='M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,202.7C672,203,768,181,864,181.3C960,181,1056,203,1152,208C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+}
+
+/* Estilos para el reproductor de música */
+.music-player-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.music-player-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.playlist-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Personalización de colores - Puedes modificar estos valores */
+.theme-default {
+  --primary-color: #006FEE;
+  --primary-light: #e6f1fe;
+  --accent-color: #7828c8;
+}
+
+.theme-warm {
+  --primary-color: #f5a524;
+  --primary-light: #fefce8;
+  --accent-color: #f31260;
+}
+
+.theme-earth {
+  --primary-color: #17c964;
+  --primary-light: #e8faf0;
+  --accent-color: #f5a524;
+}
+
+/* Aplicar tema - Cambia la clase en el div principal para cambiar el tema */
+.theme-default .text-theme-primary {
+  color: var(--primary-color);
+}
+
+.theme-warm .text-theme-primary {
+  color: var(--primary-color);
+}
+
+.theme-earth .text-theme-primary {
+  color: var(--primary-color);
+}
